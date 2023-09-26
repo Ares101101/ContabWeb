@@ -8,7 +8,7 @@ import Servicios from "./pages/servicios/Servicios";
 function App() {
 
   return (
-    <div >
+    <div className='Contav' >
       <Router>
         <NavBar/>
         <Routes>

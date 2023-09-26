@@ -1,7 +1,10 @@
-
+  import style from './Inicio.module.css'
+  
   export default function Inicio() {
     return (
-     <div></div>
+     <div className={style.inicioS} >
+      hola
+     </div>
     )
   }
   
