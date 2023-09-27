@@ -1,0 +1,8 @@
+:root{
+   --pantalla: calc(100vh - 20vh) 
+}
+.fondo{
+    width: 100%;
+    height: var(--pantalla);
+    background: linear-gradient(55deg ,#3f37c9 , #4361ee , #4895ef ,#4cc9f0);
+}

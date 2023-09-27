@@ -1,20 +1,21 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import NavBar from "./header/NavBar";
 import Clientes from "./pages/Clientes/Clientes";
-import EstudioContable from "./pages/estudio-contable/EstudioContable";
 import Inicio from "./pages/inicio/Inicio";
 import Servicios from "./pages/servicios/Servicios";
+import Aplicaciones from "./pages/aplicaciones/AppC"
+import style from './App.module.css';
 
 function App() {
 
   return (
-    <div className='Contav' >
+    <div className={style.fondo}>
       <Router>
         <NavBar/>
         <Routes>
           <Route exact path='/' element={ <Inicio/>} />
           <Route path='/Clientes' element={ <Clientes/>}/>
-          <Route path='/Estudio-Contable' element={ <EstudioContable/>}/>
+          <Route path='/Aplicaciones' element={ <Aplicaciones/>}/>
           <Route path='/Servicios' element={ <Servicios/>}/>
         </Routes>
       </Router>
