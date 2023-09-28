@@ -3,7 +3,7 @@
 
   export default function Inicio() {
     return (
-      <div>
+      <>
          <div className={style.inicioS} >
           <ul>
             <p className={style.p1}>Contab: Innovación Contable con Software Libre</p>
@@ -30,7 +30,7 @@
 
             3. Colaboración Sostenible: "Creemos en la colaboración sostenible. La fase de prueba y el modelo de pago futuro nos permitirán continuar ofreciendo soluciones de alta calidad mientras mantenemos un compromiso a largo plazo con la comunidad empresarial."
             </p>   <p className={style.p2} >
-              VISION
+              Visión:
             </p>
             <p className={style.p3}>
             En Contab, creemos en el poder de la programación para transformar la contabilidad de las empresas. Nos comprometemos a proporcionar soluciones de vanguardia, y parte de este compromiso implica la fase de prueba de algunas de nuestras aplicaciones. Estamos emocionados de ofrecer a las empresas la oportunidad de probar y experimentar con nuestras herramientas de manera gratuita durante esta etapa inicial
@@ -48,7 +48,6 @@
             </p>   
           </ul>
         </div>
-      </div>
-    
+      </>
     )
   }

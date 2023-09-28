@@ -1,6 +1,6 @@
 :root{
-   --pantalla: calc(100vh - 20vh) 
-}
+    --pantalla: calc(100vh - 20vh) 
+ }
 .fondo{
     width: 100%;
     height: var(--pantalla);
