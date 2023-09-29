@@ -4,30 +4,41 @@ import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   return (
-    <div className={style.NavBarStyle}>
-      <div className={style.ContabStyle}>
-        Contab 
+    <nav className={style.NavBarStyle}>
+      <div className={style.divStyle}>
+        <ul className={style.uls}>   
+              <li >
+                <strong className={style.ContabStyle} >
+                  <span className={style.spC}>
+                    Con
+                  </span>
+                  <span>
+                    tab
+                  </span>
+                  </strong>
+              </li>
+              <li className={style.inicioStyle}>
+                <Link to='/'>
+                Inicio 
+                </Link>
+              </li>
+              <li className={style.inicioStyle}>
+                <Link to='/Aplicaciones'>
+                  Aplicaciones 
+                </Link>
+              </li>
+              <li className={style.inicioStyle}>
+                <Link to='/Clientes'>
+                  Clientes 
+                </Link>
+              </li>
+              <li className={style.inicioStyle}>
+                <Link to='/Servicios'>
+                  Servicios
+                </Link>
+              </li>   
+          </ul>    
       </div>
-      <div className={style.inicioStyle}>
-        <Link to='/'>
-         Inicio 
-        </Link>
-      </div>
-      <div className={style.AppStyle}>
-        <Link to='/Aplicaciones'>
-          Aplicaciones 
-        </Link>
-      </div>
-      <div className={style.CliStyle}>
-        <Link to='/Clientes'>
-          Clientes 
-        </Link>
-      </div>
-      <div className={style.CurStyle}>
-        <Link to='/Servicios'>
-          Servicios
-        </Link>
-      </div>
-    </div>
+    </nav>
   )
 }
