@@ -1,11 +1,11 @@
   import style from './AppC.module.css'
-
+  import image from "../../assets/62shots_so.png";
   export default function Aplicaciones() {
     
     return (
-      <div className={style.cont}>
-       <p>hola</p>
-      </div>
+      <article className={style.cont}>
+         <img src={image}className={style.i} />
+      </article>
     )
   }
   

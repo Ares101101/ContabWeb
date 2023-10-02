@@ -1,5 +1,5 @@
 .NavBarStyle{     
-    height:15vh;
+    max-height: 102px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0;
@@ -7,7 +7,7 @@
     justify-content: center;
     flex-direction: column;
     display: flex;
-    min-height: 100px;
+    min-height: 102px;
 }
 .uls{
     margin: auto;
@@ -17,31 +17,81 @@
     
     
 }
+.divStyle{
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+}
+.uls1{
+    margin: auto;
+    display: flex;
+    justify-content:space-between ;
+    min-width: 700px;
+   
+}
 .ContabStyle{
     color: white;
     font-weight: 600;
     font-size: 25px;
     letter-spacing: 2px; 
 
-     display: flex;
+    display: flex;
 }
 .inicioStyle{
     color:white;
     font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight:600;
     font-size: 16px;
-    width: 70px ;
+    width: 100% ;
     display: flex;
     border-radius: 0.4rem; 
     justify-content: center;
     align-items: center;    
+}
+.inicioStylet{
+    color:white;
+    font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-weight:600;
+    font-size: 25px;
+    width: 100% ;
+    display: flex;
+    border-radius: 0.4rem; 
+    justify-content: center;
+    align-items: center;  
+    
+    display: none;
+    height: 100%;
 }
 .spC{
     background: linear-gradient(55deg ,#3f37c9 , #4361ee , #4895ef ,#4cc9f0);
     display: flex;
     border-radius: 0.4rem; 
     justify-content: center;
-    align-items: end;  
+    align-items:flex-end;  
+}
+@media (max-width: 830px) {
+    .inicioStylet{
+        display: flex;
+        
+    }
+    .inicioStyle{
+     
+        display: none;
+  
+    }
+    .uls1{
+        margin: auto;
+        display: flex;
+        justify-content:space-between ;
+        min-width: 100%;
+       
+    }
+
+}
+@media (max-width: 620px){
+    .NavBarStyle{     
+        min-height: 56px;   
+    }
 }
 /*
 

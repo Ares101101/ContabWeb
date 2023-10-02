@@ -1,4 +1,16 @@
 
 .cont{
-    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+   
+}
+.i{
+    width: 500px;
+    height: 300px;
 }
