@@ -1,13 +1,19 @@
 .fondo1{
     width: 100%;
     height: 730px;
-    background: linear-gradient(55deg ,#3f37c9 , #4361ee , #4895ef ,#4cc9f0);
-
+    background-image: url(https://torange.biz/photo/20/HD/sky-blue-clear-20213.jpg);
+    background-repeat: no-repeat;  
+    background-size:cover;
 }
 .fondo2{
-    background: linear-gradient(0deg ,#001233 , #5c677d);
+    
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/189/878/non_2x/colorful-clouds-at-sunset-free-photo.jpg);
+    background-repeat: no-repeat;  
+    
+    background-size:cover;
+    
 }
 .fondo3{
     background: linear-gradient(0deg ,#001233 , #5c677d);

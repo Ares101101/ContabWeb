@@ -1,5 +1,4 @@
-
-.cont{
+.article{
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -8,9 +7,80 @@
     padding-left: 16px;
     padding-right: 16px;
     position: relative;
-   
 }
-.i{
-    width: 500px;
-    height: 300px;
+.headerc{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 628px;
+    gap: 30px;
+    
+    
+}
+.i1{
+   max-width: 504px;
+   border-radius: 1rem;
+   max-height: 378px;
+}
+.divco{
+    max-width: 1173px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.divco1{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    justify-content: space-between;
+    max-width:1173px ;
+}
+.divco2{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    justify-content: space-between;
+    max-width:1173px ;
+}
+.p{
+    color: white;   
+    font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.p1{
+    color: white;  
+    font-weight:600;
+    font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+@media (max-width: 780px) {
+    .divco1{
+    
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        gap: 30px;
+        justify-content: space-between;
+        max-width:1173px ;
+    }
+    .divco2{
+    
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        gap: 30px;
+        justify-content: space-between;
+        max-width:1173px ;
+    }
+    .i1{
+        max-width: 100%;
+    }
 }

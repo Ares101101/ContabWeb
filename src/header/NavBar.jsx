@@ -15,28 +15,13 @@ export default function NavBar({setIsFondo}) {
           fondo4: false,
         });
       }
+            
       if (location.pathname === '/Aplicaciones') {
         setIsFondo({
           fondo1: false,
           fondo2: true,
           fondo3: false,
           fondo4: false,
-        });
-      }
-      if (location.pathname === '/Clientes') {
-        setIsFondo({
-          fondo1: false,
-          fondo2: false,
-          fondo3: true,
-          fondo4: false,
-        });
-      }
-      if (location.pathname === '/Servicios') {
-        setIsFondo({
-          fondo1: false,
-          fondo2: false,
-          fondo3: false,
-          fondo4: true,
         });
       }
     };
@@ -67,23 +52,12 @@ export default function NavBar({setIsFondo}) {
                     </svg>
      
                     </li> 
-                    <Link to='/' className={style.inicioStyle}
-                    >
+                    <Link to='/' className={style.inicioStyle}>
                     Inicio 
                     </Link>
-                 
                     <Link to='/Aplicaciones' className={style.inicioStyle}>
                       Aplicaciones 
-                    </Link>
-                 
-                    <Link to='/Clientes' className={style.inicioStyle}>
-                      Clientes 
-                    </Link>
-                 
-                    <Link to='/Servicios' className={style.inicioStyle}>
-                      Servicios
-                    </Link> 
-                    
+                    </Link>  
                 </ul>
               </div>  
           </ul>    
