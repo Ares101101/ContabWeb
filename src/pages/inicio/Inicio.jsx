@@ -6,7 +6,7 @@
     return (
       <article className={style.article}>
         <header className={style.headerc} >
-          <div className={style.divco1}>
+          < div className={style.divco1}>
             <div className={style.divco}>
               <strong className={style.p1}>Contab: Innovación Contable con Software Libre</strong>
               <p className={style.p}>

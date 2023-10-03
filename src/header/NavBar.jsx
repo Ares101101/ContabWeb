@@ -45,19 +45,22 @@ export default function NavBar({setIsFondo}) {
               <div className={style.divStyle}>
                 <ul className={style.uls1}>
                     <li className={style.inicioStylet}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" focusable="false" className="chakra-icon css-1fmr1qf">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-     
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" focusable="false" className="chakra-icon css-1fmr1qf">
+                      <line x1="3" y1="12" x2="21" y2="12"></line>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <line x1="3" y1="18" x2="21" y2="18"></line>
+                      </svg>
                     </li> 
                     <Link to='/' className={style.inicioStyle}>
-                    Inicio 
+                      
+                        Inicio 
+                      
                     </Link>
                     <Link to='/Aplicaciones' className={style.inicioStyle}>
-                      Aplicaciones 
-                    </Link>  
+                      
+                        Aplicaciones
+                  
+                    </Link>
                 </ul>
               </div>  
           </ul>    

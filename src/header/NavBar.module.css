@@ -1,3 +1,11 @@
+:root{
+    --border-color : linear-gradient(
+        to right,
+        tomato 0%,
+        gold 100%
+    )
+}
+
 .NavBarStyle{     
     max-height: 102px;
     padding-left: 16px;
@@ -37,16 +45,44 @@
 
     display: flex;
 }
+.p20Style{
+    display: flex;
+  
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+    border-radius: 0.4rem;
+    
+}
+
 .inicioStyle{
     color:white;
     font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
     font-weight:600;
     font-size: 16px;
-    width: 100% ;
+    width: 350px ;
+    height: 24px;
     display: flex;
     border-radius: 0.4rem; 
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+   
+}
+.inicioStyle::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    background-color:#001233;
+    border-radius: inherit;
+    z-index: -1;
+}
+.inicioStyle:hover{
+    background: linear-gradient(45deg,tomato 0%, gold 100%) ;
+    z-index:1 ;
+    position: relative;
 }
 .inicioStylet{
     color:white;
@@ -63,11 +99,15 @@
     height: 100%;
 }
 .spC{
-    background: linear-gradient(55deg ,#3f37c9 , #4361ee , #4895ef ,#4cc9f0);
+    background: conic-gradient( #002855 90%,#0466c8 10%);
     display: flex;
     border-radius: 0.4rem; 
     justify-content: center;
     align-items:flex-end;  
+}
+.ContabStyle{
+    background-color: black;
+    border-radius: 0.4rem; 
 }
 @media (max-width: 830px) {
     .inicioStylet{

@@ -14,8 +14,7 @@
     align-items: center; 
     height: 628px;
     gap: 30px;
-    
-    
+    position: relative;
 }
 .i{
     max-width: 560px;
@@ -29,16 +28,34 @@
     flex-direction: column;
     justify-content: center;
     gap: 30px;
+   
     
 }
-.divco1{
-    
+.divco1 {
+    position: relative;
+    inset: 0;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 30px;
     justify-content: space-between;
-    max-width:1173px ;
+    max-width: 1173px;
+    overflow: hidden;
+    z-index: 1; /* Agregado z-index */
+    padding: 10px;
+    background: radial-gradient(#0466c8 100%, #002855 0%) ;
+}
+
+.divco1::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 3px;
+    left: 3px;
+    background-color:black;
+    border-radius: inherit;
+    z-index: -1;
 }
 .divp{
     flex-direction: column;
@@ -48,25 +65,50 @@
     place-content: center;
 }
 .ulp{
+    position: relative;
+    inset: 0;
+    border-radius: 10px;
     display: flex;
-    justify-content: center; 
-    gap: 50px;
-    flex-direction: column;
+    flex-direction:column;
+    gap: 30px;
+    justify-content: space-between;
     max-width: 1173px;
+    overflow: hidden;
+    z-index: 1; /* Agregado z-index */
+    padding: 10px;
+    background: linear-gradient(45deg,tomato 0%, gold 100%) ;
+}
+.ulp::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color:#001233;
+    border-radius: inherit;
+    z-index: -1;
 }
 
 @media (max-width: 780px) {
     .divco1{
-    
+        background-color:transparent;
         display: flex;
         flex-direction:column;
         justify-content: center;
         gap: 30px;
         justify-content: space-between;
         max-width:1173px ;
+   
+       
+        background: none;
+       
     }
     .i{
         max-width: 100%;
+    }
+    .divco1::before {
+        display: none;
     }
 }
   .p{
@@ -76,18 +118,21 @@
 }
 
 .p1{
-    color: white;  
+    background: -webkit-linear-gradient(45deg,tomato 0%, gold 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     font-weight:600;
     font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 30px;
 }
 .p2{
-    color: black;
+    
     font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 30px;
+    color:white;
 }
 .p3{
-    color: black;
+    color:white;
     font-family:Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 16px;
 }
